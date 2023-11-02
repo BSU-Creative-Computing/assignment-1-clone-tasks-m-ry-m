@@ -1,0 +1,174 @@
+// making variables needed in the scss
+$head_foot_color:#8ccff7;
+$hovered:#444;
+$row1:#4e89ae;
+$row2:#43658b;
+$row3:#ed6663;
+$row4:#ffa372;
+$footer_height:50px;
+
+$height1: 400px;
+$height2: 300px;
+$height3: 200px;
+
+$circle_radius1:70px;
+$circle_radius2:80px;
+$circle_radius3:90px;
+$circle_radius4:100px;
+
+
+// hiding the sizes
+#size2,#size3{
+    display: none;
+}
+
+// styling the header
+#header{
+    background-color: $head_foot_color;
+    height: $height1;
+    display: flex;
+    justify-content: center;
+}
+
+// arrangingt the center box accordingly
+#box{
+    height: $height1;
+    width: $height1;
+    background-color: 2#c4c0c0;
+    color: rgb(151, 147, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+// styling the footer
+footer{
+    background-color: $head_foot_color;
+}
+
+
+#lightblue,#blue,#red,#orange,#space,footer{
+    height: 40px;
+    width: 100%;
+}
+
+#lightblue{
+    background-color: $row1;
+}
+#blue{
+    background-color: $row2;
+}
+#red{
+    background-color: $row3;
+}
+#orange{
+    background-color: $row4;
+}
+#circles{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $row1;
+}
+#circle2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $row2;
+}
+#circle3{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: $row3;
+}
+#circle4{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $row4;
+}
+#circle1, #circle2, #circle3, #circle4{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#circle1:hover,#circle2:hover,#circle3:hover,#circle4:hover,#lightblue:hover,#blue:hover,#red:hover,#orange:hover{
+    background-color: #444;
+}
+
+@media screen and (max-width:620px){
+    #circles{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #circle1, #circle2, #circle3, #circle4{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #size1,#size3{
+        display: none;
+    }
+    #size2{
+        display: block;
+    }
+    #box{
+    height: $height2;
+    width: $height2;
+    }
+    #header{
+    background-color: $head_foot_color;
+    height: $height2;
+    display: flex;
+    justify-content: center;
+    }
+    #circle1:hover,#circle2:hover,#circle3:hover,#circle4:hover,#lightblue:hover,#blue:hover,#red:hover,#orange:hover{
+        background-color: #444;
+    }
+    
+
+}
+
+@media screen and (max-width:480px){
+    #circles{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #circle1, #circle2, #circle3, #circle4{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #size1,#size2{
+        display: none;
+    }
+    #size3{
+        display: block;
+    }
+    #box{
+    height: $height3;
+    width: $height3;
+    }
+    #header{
+    background-color: $head_foot_color;
+    height: $height3;
+    display: flex;
+    justify-content: center;
+    }
+    #circle1:hover,#circle2:hover,#circle3:hover,#circle4:hover,#lightblue:hover,#blue:hover,#red:hover,#orange:hover{
+        background-color: #444;
+    }
+    
+}
