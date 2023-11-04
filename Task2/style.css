@@ -36,8 +36,14 @@ footer{
     border-radius: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px 0px 8px 10px;
+    padding: 5px 0px 8px 10px;
     background-color: white;
+}
+input{
+    border: none;
+}
+input:focus,textarea:focus,select:focus {
+        outline: none;
 }
 nav{
     flex: 2;
@@ -47,10 +53,17 @@ nav{
     font-size: 18px;
     font-weight: 700;
 }
+span{
+    display: none;
+}
 a{
     padding: 7px;
     text-decoration: none;
     color: white;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
 }
 h2,p,button{
     padding-left: 10px;
@@ -68,6 +81,11 @@ button{
     background-color: #1E90FF;
     padding: 10px 15px 10px 15px ;
     border-radius: 5px;
+}
+button:hover{
+    background-color: #68b0f8;
+    cursor: pointer;
+    color: rgb(20, 16, 16);
 }
 .avn button{
     float: right;
@@ -167,15 +185,82 @@ div{
     .movie{
         height: 45%;
     }
+    header{
+        display: flex;
+    }
+    #logo,#Search,nav{
+        flex: 1;
+    }
+    #Search{
+        margin-left: -70px;
+        height: 20px;
+        margin-top: 25px;
+        padding-top: 1px;
+        padding-bottom: 10px;
+    }
 }
 @media screen and (min-width:481px) and (max-width:800px){
     main{
         margin-left: 0;
         margin-right: 0;
-        display: block;
+        display:flex;
+        flex-direction: column;
+    }
+    .ll,.rr{
+        flex: 1;
     }
     .avn{
         height: 1000px;
     }
+    .movie{
+        height: 45%;
+    }
+    span{
+        display: block;
+        color: white;
+        margin-top: -5px;
+    }
+    #logo{
+        margin-top: -10px;
+        margin-bottom: 5px;
+    }
+    a,#Search{
+        display: none;
+    }
 
+}
+
+@media screen and (max-width:480px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+    .ll,.rr{
+        flex: 1;
+    }
+    .movie{
+        height: 45%;
+        flex: 1;
+    }
+    .avn button{
+        margin-right: 30px;
+    }
+    span{
+        display: block;
+        color: white;
+        margin-top: -5px;
+    }
+    #logo{
+        margin-top: -10px;
+        margin-bottom: 5px;
+    }
+    a,#Search{
+        display: none;
+    }
 }
