@@ -33,13 +33,13 @@ $height3: 200px;
 // hiding the sizes
 #size1{
     display: block;
-    @include breakpoint(0, 620px){
+    @include breakpoint(0, 801px){
         display: none;
     }
 }
 #size2{
     display: none;
-    @include breakpoint(481px, 620px){
+    @include breakpoint(481px, 800px){
         display: block;
     }
 }
@@ -57,7 +57,7 @@ $height3: 200px;
     height: $height1;
     display: flex;
     justify-content: center;
-    @include breakpoint(481px, 620px){
+    @include breakpoint(481px, 800px){
         height: $height2;
     }
     @include breakpoint(0, 480px){
@@ -75,7 +75,7 @@ $height3: 200px;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    @include breakpoint(481px, 620px){
+    @include breakpoint(481px, 800px){
         height: $height2;
         width: $height2;
     }

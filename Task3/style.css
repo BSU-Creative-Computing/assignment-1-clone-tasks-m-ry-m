@@ -1,7 +1,7 @@
 #size1 {
   display: block;
 }
-@media screen and (min-width: 0) and (max-width: 620px) {
+@media screen and (min-width: 0) and (max-width: 801px) {
   #size1 {
     display: none;
   }
@@ -10,7 +10,7 @@
 #size2 {
   display: none;
 }
-@media screen and (min-width: 481px) and (max-width: 620px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
   #size2 {
     display: block;
   }
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 481px) and (max-width: 620px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
   #header {
     height: 300px;
   }
@@ -52,7 +52,7 @@
   align-items: center;
   font-size: 40px;
 }
-@media screen and (min-width: 481px) and (max-width: 620px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
   #box {
     height: 300px;
     width: 300px;
